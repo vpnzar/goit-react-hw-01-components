@@ -27,7 +27,8 @@
   border-radius: 50px;
 }
 .name {
+  color: black;
   margin-left: 10px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 900;
 }
