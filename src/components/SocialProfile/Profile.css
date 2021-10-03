@@ -1,0 +1,60 @@
+.Profile {
+  display: inline-block;
+  padding: 50px;
+  width: auto;
+  height: auto;
+
+  background-color: hsl(197, 78%, 95%);
+}
+.description {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: Segoe UI;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 2px 1px -1px rgb(0 0 0 / 12%);
+}
+.description img {
+  border-radius: 50%;
+}
+
+.stats {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(203, 226, 236);
+  width: 100px;
+  height: 100px;
+  background-color: hsl(193, 100%, 98%);
+  font-family: Segoe UI;
+  font-size: 12px;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 10%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 2px 1px -1px rgb(0 0 0 / 12%);
+}
+
+.stats li:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+.stats li:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+.quantity {
+  font-size: 14px;
+  font-family: Segoe UI;
+  font-weight: 700;
+}
