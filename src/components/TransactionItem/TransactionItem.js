@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// import s from './TransactionItem.module.css';
 
 function TransactionItem({ id, type, amount, currency }) {
   return (

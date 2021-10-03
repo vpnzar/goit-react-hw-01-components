@@ -1,10 +1,15 @@
+import s from './StatItem.module.css';
 import PropTypes from 'prop-types';
 
 function StatItem({ id, label, percentage }) {
   return (
-    <li className="item" id={id}>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+    <li
+      style={{ backgroundColor: `${changeColor()}` }}
+      className={s.item}
+      id={id}
+    >
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage + '%'}</span>
     </li>
   );
 }
@@ -14,5 +19,11 @@ StatItem.propTypes = {
   percentage: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
 };
+
+function changeColor() {
+  const rdmColor = () => (Math.random() * 256) >> 0;
+  const varColor = `rgb(${rdmColor()}, ${rdmColor()}, ${rdmColor()})`;
+  return varColor;
+}
 
 export default StatItem;

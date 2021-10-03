@@ -1,0 +1,11 @@
+th,
+td {
+  border-color: grey;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+}

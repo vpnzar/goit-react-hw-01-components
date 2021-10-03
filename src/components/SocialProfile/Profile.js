@@ -1,33 +1,38 @@
-import './Profile.css';
+import s from './Profile.module.css';
 import PropTypes from 'prop-types';
 
 function Profile({ avatar, name, tag, location, stats }) {
   return (
-    <div className="Profile">
-      <div className="description">
-        <img src={avatar} alt={name} className="avatar" width="120" />
-        <p className="name">{name}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img src={avatar} alt={name} className={s.avatar} width="120" />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>{'@' + tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={s.stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
   );
 }
+
+Profile.defaultProps = {
+  name: 'Unknown',
+  avatar: 'https://vectorified.com/images/user-account-icon-34.jpg',
+};
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,

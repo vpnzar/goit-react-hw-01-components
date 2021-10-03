@@ -1,9 +1,9 @@
-.Profile {
+.profile {
   display: inline-block;
   padding: 50px;
   width: auto;
   height: auto;
-
+  margin-right: 30px;
   background-color: hsl(197, 78%, 95%);
 }
 .description {
@@ -19,6 +19,22 @@
 }
 .description img {
   border-radius: 50%;
+}
+div p:nth-child(2) {
+  color: black;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+div p {
+  color: #948f8f;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .stats {
@@ -55,6 +71,16 @@
 
 .quantity {
   font-size: 14px;
-  font-family: Segoe UI;
+  font-family: 'Open Sans';
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.label {
+  color: #948f8f;
+  font-family: 'Open Sans';
+  font-style: normal;
   font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
 }
